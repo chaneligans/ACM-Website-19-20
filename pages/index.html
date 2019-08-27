@@ -7,18 +7,24 @@
         <link rel="stylesheet" href="main.css">
 
         <title>CSULB ACM</title>
-        <link rel="icon" type="image/png" href="../images/favicon.ico">
+        <link rel="icon" type="image/png" href="../media/favicon.ico">
     </head>
     <body>
+        <!--Begin background graphic-->
+        <div id="background">
+            <video autoplay muted loop id="bg-vid">
+                <source src="../media/background.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!--End background graphic-->
+
         <!--Begin main header / navbar-->
         <header>
-            <a href="#home-section"><img src="../images/ACM.png" id="header_logo"></a>
-            <nav>
-                <ul>
-                    <li class="nav_item"><a href="#about-section">About</a></li>
-                    <li class="nav_item"><a href="#officers-section">Officers</a></li>
-                    <li class="nav_item"><a href="#contact-section">Contact</a></li>
-                </ul>
+            <a href="#home-section"><img src="../media/ACM.png" id="header-logo"></a>
+            <nav id="header-items">
+                <a href="#about-section" class="nav_item">About</a>
+                <a href="#officers-section" class="nav_item">Officers</a>
+                <a href="#contact-section" class="nav_item">Contact</a>
             </nav>
         </header>
         <!--End main header / navbar-->

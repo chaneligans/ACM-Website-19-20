@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat:700&display=swap');
+
 #background {
 	position: fixed;
 	z-index: -1;
@@ -12,12 +14,21 @@ header {
     box-sizing: border-box;
     overflow: hidden;
     padding: 20px 10px;
+    position: fixed;
+    z-index:1000;
+    width: 100%;
+    top: 0;
 }
 
 header a {
     padding: 12px;
     line-height: 25px;
     border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(3px + 1vw);
+    text-decoration: none;
+    color: #B0BCD4;   
+    text-transform: uppercase;
 }
 
 #header-logo {
@@ -26,17 +37,61 @@ header a {
     padding-left: 2%;
 }
 
+#header-items {
+    padding-right: 2%;
+}
+
 header nav {
     float: right;
 }
 
 section {
     height: 100vh;
+    position: relative;
 }
 
-#home-section .title {
-    left: 50%;
+#home-content{
+    text-align: center;
+    position: absolute;
     top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(25px + 1vw);
+    text-transform: uppercase;
+    color: #ECE1C3;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(15px + 1vw);
+    color: #B0BCD4;
+}
+
+.discord-btn {
+	background: #7289DA;
+	border: none;
+	padding: 15px 0;
+	border-radius: 3px;
+	cursor: pointer;
+    width: 20%;
+    margin: auto;
+}
+
+.discord-btn a {
+    font-family: 'Montserrat';
+    color: #fff;
+    text-decoration: none;
+    font-size: calc(1px + .75vw);
+}
+
+#discord-btn-icon {
+    padding-right: 10px;
+    font-size: calc(1px + 1vw);
 }
 
 footer {

@@ -55,8 +55,11 @@ section {
     position: relative;
 }
 
-#home-content{
+#home-content {
     text-align: center;
+}
+
+#home-content, #about-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,6 +100,39 @@ section {
 #discord-btn-icon {
     padding-right: 10px;
     font-size: calc(1px + 1vw);
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    padding: 0 7vw;
+}
+
+#about-content {
+    background-color: rgba(256, 256, 256, 0.6);
+    padding: 20px;
+}
+
+.about-content-desc {
+    color: #FFF;
+    font-family: 'Nunito Sans', sans-serif;
+    padding:0 10vw;
+    font-size: calc(1px + 1vw);
+}
+
+#img-googlemeeting, #img-gbm {
+    width: 40%;
+}
+
+.left {
+    width: 50%;
+    float: left;
+  
+}
+
+.right {
+    width: 50%;
+    float: right;
 }
 
 footer {

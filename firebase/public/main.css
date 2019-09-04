@@ -29,6 +29,7 @@ body {
     overflow: hidden;
 }
 
+
 .active {
     background-color: rgba(108, 118, 122, 0.8);
 }
@@ -192,17 +193,30 @@ header a {
   display: flex;
 }
 
-
 /* Styling each column in the box */
 .about-box {
   background-color: rgba(176,188,212, 0.5);
   width: calc(100% * 1/4);
-  display: inline-block;
   margin: 10px auto;
   padding: 15px;
   font-family: 'Nunito Sans';
   font-size: 19px;
 }
+
+@media screen and (max-width: 1000px) {
+  #about-boxes {
+    display: block;
+  }
+  
+  .about-box {
+    width: 80%;
+  }
+  
+  #about-section {
+    height: auto;
+  }
+}
+
 
 
 .about-img {
@@ -256,6 +270,7 @@ header a {
 .bottom-card {
   height: 20%;
   border-radius: 0px 0px 10px 10px;
+  text-align: left;
 }
 
 
@@ -287,18 +302,18 @@ header a {
 .profile-name {
   font-family: 'Montserrat';
   text-transform: uppercase;
-  font-size: calc(4px + 1vw);
+  font-size: 25px;
   margin: 20px 5px;
 }
-
 
 .position-name {
   text-align: center;
   font-family: 'Nunito Sans';
-  font-size: calc(1px + 1vw);
+  font-size: 23px;
   color: white;
   line-height: 0;
 }
+
 
 
 .profile-desc {
@@ -379,9 +394,15 @@ footer {
     font-family: 'Nunito Sans', sans-serif;
     color: #FFF;
     line-height: 10px;
-    font-size: calc(1px + 1vw);
+    font-size: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-desc-p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
 
 /* Styling the social media icons on the footer */
 .footer-icon {

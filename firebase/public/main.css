@@ -130,6 +130,26 @@ header a {
   }
 }
 
+@media screen and (max-width: 500px){
+  .title {
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .title {
+    font-size: 15px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+  }
+}
+
 
 /* Styling the Discord invitation button */
 .discord-btn {
@@ -214,12 +234,35 @@ header a {
 }
 
 @media screen and (max-width: 1000px) {
+  .heading {
+    font-size: 40px;
+  }
+  
   #about-boxes {
     display: block;
   }
   
   .about-box {
     width: 80%;
+  }
+  
+  #about-section {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 25px;
+  }
+  
+  #about-boxes {
+    display: block;
+  }
+  
+  .about-box {
+    width: 80%;
+    font-size: 14px;
   }
   
   #about-section {
@@ -267,6 +310,7 @@ header a {
   height: 40%;
   background-color: #B0BCD4;
   border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 6px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 
@@ -274,6 +318,7 @@ header a {
   height: 40%;
   background-color: #EEEEEE;
   border-radius: 0px 0px 10px 0px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 6px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 
@@ -343,11 +388,12 @@ header a {
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  transition:.5s;
+  transition:all .5s ease;
 }
 
 .profile-flag:hover {
   background-color: #545454;
+  line-height: 30px;
 }
 
 
@@ -366,13 +412,127 @@ header a {
 
 .profile-icon:hover {
   color: #dbdbdb;
-  font-size: 25px;
   
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+  }
+
+
+  .top-card {
+    height: 40%;
+    background-color: #B0BCD4;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.05), 0 6px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+
+  .middle-card {
+    height: 40%;
+    background-color: #EEEEEE;
+    border-radius: 0px 0px 5px 0px;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.05), 0 6px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+
+  .bottom-card {
+    height: 20%;
+    border-radius: 0px 0px 5px 5px;
+    text-align: left;
+  }
+
+
+  .profile-photo {
+    width: 60px;
+    height: 60px;'
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+
+  /* Positioning the top left half of the profile (icon) */
+  .left-card {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    float: left;
+  }
+
+
+  /* Positioning the top right half of the profile (name/position) */
+  .right-card {
+    float: right;
+    padding-right: 10px;
+  }
+
+
+  /* Styling text on the profiles */
+  .profile-name {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 5px;
+  }
+
+  .position-name {
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    color: white;
+    line-height: 0;
+  }
+
+
+
+  .profile-desc {
+    padding: 10px;
+    font-family: 'Nunito Sans';
+    font-size: 12px;
+  }
+
+
+  /* Styling each profile flag */
+  .profile-flag {
+    padding: 7px;
+    display: inline-block;
+    background-color: #828282;
+    border-radius: 0px 0px 5px 5px;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:all .5s ease;
+  }
+
+  .profile-flag:hover {
+    background-color: #545454;
+    line-height: 15px;
+  }
+
+
+  /* Styling social media icons in the flags of the profiles */
+  .profile-icon {
+    color: #FFF;
+    font-size: 18px;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
 }
 
 /* Styling the footer */
@@ -411,6 +571,16 @@ footer {
   .footer-desc-p {
     font-size: 15px;
     line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-desc-p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .footer-heading {
+    font-size: 12px;
   }
 }
 
